@@ -47,24 +47,20 @@
             <!-- Financial Cards -->
             <section class="cards">
 
-                <div class="card">
-                    <p>Total Balance</p>
-                    <h2>RWF 250,000</h2>
-                    <span>Available balance</span>
-                </div>
+             <div class="card">
+    <h3>Total Balance</h3>
+    <h2 id="totalBalance">RWF 0</h2>
+</div>
 
-                <div class="card">
-                    <p>Total Income</p>
-                    <h2>RWF 400,000</h2>
-                    <span>Recorded income</span>
-                </div>
+<div class="card">
+    <h3>Total Income</h3>
+    <h2 id="totalIncome">RWF 0</h2>
+</div>
 
-                <div class="card">
-                    <p>Total Expenses</p>
-                    <h2>RWF 150,000</h2>
-                    <span>Recorded expenses</span>
-                </div>
-
+<div class="card">
+    <h3>Total Expenses</h3>
+    <h2 id="totalExpenses">RWF 0</h2>
+</div>
             </section>
 
             <!-- Analytics -->
@@ -95,36 +91,44 @@
 
             <!-- Transactions -->
             <section class="transactions">
-                <div class="section-heading">
-                    <h2>Recent Transactions</h2>
-                    <span>Sample transactions</span>
-                </div>
+    <h2>Manage Transactions</h2>
 
-                <div class="transaction">
-                    <div>
-                        <strong>Shop Sales</strong>
-                        <p>Income</p>
-                    </div>
-                    <strong class="income">+ RWF 100,000</strong>
-                </div>
+    <form id="transactionForm" class="transaction-form">
+        <input
+            type="text"
+            id="description"
+            placeholder="Transaction description"
+            required
+        >
 
-                <div class="transaction">
-                    <div>
-                        <strong>Stock Purchase</strong>
-                        <p>Business expense</p>
-                    </div>
-                    <strong class="expense">- RWF 45,000</strong>
-                </div>
+        <input
+            type="number"
+            id="amount"
+            placeholder="Amount in RWF"
+            min="1"
+            step="1"
+            required
+        >
 
-                <div class="transaction">
-                    <div>
-                        <strong>Transport</strong>
-                        <p>Business expense</p>
-                    </div>
-                    <strong class="expense">- RWF 15,000</strong>
-                </div>
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
 
-            </section>
+        <select id="category">
+            <option value="Sales">Sales</option>
+            <option value="Salary">Salary</option>
+            <option value="Stock">Stock</option>
+            <option value="Transport">Transport</option>
+            <option value="Bills">Bills</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <div id="transactionsList" class="transactions-list"></div>
+</section>
 
             <!-- AI Assistant -->
             <section class="ai-section">
