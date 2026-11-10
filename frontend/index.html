@@ -4,20 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartPesa AI</title>
+    <title>SmartPesa AI | Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>SmartPesa AI</h1>
-        <p>Your intelligent financial assistant</p>
-    </header>
+    <div class="dashboard">
 
-    <main>
-        <h2>Welcome to SmartPesa</h2>
-        <p>Manage your money smarter with AI.</p>
-    </main>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">SmartPesa<span> AI</span></h2>
+
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Transactions</a>
+                <a href="#">Budgets</a>
+                <a href="#">Savings Goals</a>
+                <a href="#">AI Assistant</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#">Settings</a>
+                <a href="#">Help</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Financial Overview</h1>
+                    <p>Welcome back! Here's your financial summary.</p>
+                </div>
+
+                <div class="profile">
+                    <span>My Account</span>
+                    <div class="avatar">SP</div>
+                </div>
+            </header>
+
+            <!-- Financial Cards -->
+            <section class="cards">
+
+                <div class="card">
+                    <p>Total Balance</p>
+                    <h2>RWF 250,000</h2>
+                    <span>Available balance</span>
+                </div>
+
+                <div class="card">
+                    <p>Total Income</p>
+                    <h2>RWF 400,000</h2>
+                    <span>Recorded income</span>
+                </div>
+
+                <div class="card">
+                    <p>Total Expenses</p>
+                    <h2>RWF 150,000</h2>
+                    <span>Recorded expenses</span>
+                </div>
+
+            </section>
+
+            <!-- Analytics -->
+            <section class="analytics">
+                <div class="section-heading">
+                    <h2>Financial Analytics</h2>
+                    <span>Sample monthly data</span>
+                </div>
+
+                <div class="chart-placeholder">
+                    <div class="bar" style="height: 45%"></div>
+                    <div class="bar" style="height: 65%"></div>
+                    <div class="bar" style="height: 35%"></div>
+                    <div class="bar" style="height: 85%"></div>
+                    <div class="bar" style="height: 55%"></div>
+                    <div class="bar" style="height: 75%"></div>
+                </div>
+
+                <div class="chart-labels">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                </div>
+            </section>
+
+            <!-- Transactions -->
+            <section class="transactions">
+                <div class="section-heading">
+                    <h2>Recent Transactions</h2>
+                    <span>Sample transactions</span>
+                </div>
+
+                <div class="transaction">
+                    <div>
+                        <strong>Shop Sales</strong>
+                        <p>Income</p>
+                    </div>
+                    <strong class="income">+ RWF 100,000</strong>
+                </div>
+
+                <div class="transaction">
+                    <div>
+                        <strong>Stock Purchase</strong>
+                        <p>Business expense</p>
+                    </div>
+                    <strong class="expense">- RWF 45,000</strong>
+                </div>
+
+                <div class="transaction">
+                    <div>
+                        <strong>Transport</strong>
+                        <p>Business expense</p>
+                    </div>
+                    <strong class="expense">- RWF 15,000</strong>
+                </div>
+
+            </section>
+
+            <!-- AI Assistant -->
+            <section class="ai-section">
+                <div>
+                    <h2>SmartPesa AI Assistant</h2>
+                    <p>Your financial insights will appear here soon.</p>
+                </div>
+
+                <button type="button">Explore AI Assistant</button>
+            </section>
+
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
